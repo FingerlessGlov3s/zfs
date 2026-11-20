@@ -409,7 +409,7 @@ if [ -n "$ENABLE_DEBUG" ] ; then
 fi
 
 if [ -n "$CUSTOM_BRANCH" ] ; then
-  git fetch --unshallow
+  git fetch --unshallow || true
   git checkout $CUSTOM_BRANCH
 fi
 
